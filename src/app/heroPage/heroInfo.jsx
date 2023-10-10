@@ -16,7 +16,7 @@ export default function HeroInfo({ hero_info, name }) {
 				],
 				name: {
 					textStyle: {
-						color: "black", // 设置雷达图中坐标轴标签的颜色
+						color: "white", // 设置雷达图中坐标轴标签的颜色
 					},
 				},
 			},

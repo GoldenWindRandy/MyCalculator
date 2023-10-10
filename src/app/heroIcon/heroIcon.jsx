@@ -2,7 +2,7 @@ import style from "./heroIcon.module.css"
 
 export default function HeroIcon({ ename, name, onclick }) {
 
-    return (
+	return (
 		<div
 			onClick={onclick}
 			style={{
@@ -11,7 +11,7 @@ export default function HeroIcon({ ename, name, onclick }) {
 				alignItems: "center",
 				marginBottom: "16px",
 			}}
-            className={style.icon}
+			className={style.icon}
 		>
 			<div
 				style={{
