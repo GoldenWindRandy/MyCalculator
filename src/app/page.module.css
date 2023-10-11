@@ -4,15 +4,80 @@
 	justify-content: space-between;
 	flex-wrap: wrap;
 	align-items: center;
-	padding: 6rem;
+	padding: 2rem;
 	min-height: 100vh;
 	background-color: transparent;
 }
 
 .main_out {
-  background-image: url("../../public/bg04.png");
-  background-size: cover;
-  z-index: -1;
+	background-image: url("../../public/bg04.png");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	min-height: 100vh;
+	z-index: -1;
+	padding: 3rem;
+}
+
+.search_bar {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	height: 120px;
+	margin: 20px auto;
+
+}
+
+.hero_icons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.input_box {
+	width: 300px;
+	height: 30px;
+	font-size: 16px;
+	border-radius: 4px;
+	outline: 0;
+	border: 1px solid #101017;
+	background-color: transparent,
+}
+
+/* .CompreFilestyle {
+	display: inline-block;
+	background: #4f7d89;
+	border: 1px solid #4f7d89;
+	border-radius: 4px;
+	padding: 4px 12px;
+	overflow: hidden;
+	color: #1E88C7;
+	text-decoration: none;
+	text-indent: 0;
+	line-height: 20px;
+} */
+
+.container {
+	width: 80%;
+	height: 100%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.container>.search-bar {
+	width: 100%;
+	height: 40px;
+}
+
+.container>.hero-icons {
+	width: 100%;
+	height: 560px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
 
 .description {
@@ -115,6 +180,7 @@
 .logo {
 	position: relative;
 }
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
 	.card:hover {
@@ -186,11 +252,9 @@
 		border-radius: 0;
 		border: none;
 		border-bottom: 1px solid rgba(var(--callout-border-rgb), 0.25);
-		background: linear-gradient(
-			to bottom,
-			rgba(var(--background-start-rgb), 1),
-			rgba(var(--callout-rgb), 0.5)
-		);
+		background: linear-gradient(to bottom,
+				rgba(var(--background-start-rgb), 1),
+				rgba(var(--callout-rgb), 0.5));
 		background-clip: padding-box;
 		backdrop-filter: blur(24px);
 	}
@@ -201,11 +265,9 @@
 		inset: auto 0 0;
 		padding: 2rem;
 		height: 200px;
-		background: linear-gradient(
-			to bottom,
-			transparent 0%,
-			rgb(var(--background-end-rgb)) 40%
-		);
+		background: linear-gradient(to bottom,
+				transparent 0%,
+				rgb(var(--background-end-rgb)) 40%);
 		z-index: 1;
 	}
 }
@@ -231,6 +293,7 @@
 	from {
 		transform: rotate(360deg);
 	}
+
 	to {
 		transform: rotate(0deg);
 	}

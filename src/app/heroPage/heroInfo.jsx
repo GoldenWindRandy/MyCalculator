@@ -7,6 +7,7 @@ export default function HeroInfo({ hero_info, name }) {
 		const myChart = echarts.init(chartRef.current);
 
 		myChart.setOption({
+			color: ['#67F9D8', '#FFE434', '#56A3F1', '#FF917C'],
 			radar: {
 				indicator: [
 					{ name: "生存能力", max: 100 },
@@ -16,9 +17,10 @@ export default function HeroInfo({ hero_info, name }) {
 				],
 				name: {
 					textStyle: {
-						color: "white", // 设置雷达图中坐标轴标签的颜色
+						color: '#FFE434', // 设置雷达图中坐标轴标签的颜色
 					},
 				},
+
 			},
 			series: [
 				{
@@ -30,6 +32,7 @@ export default function HeroInfo({ hero_info, name }) {
 							name: "Allocated Budget",
 						},
 					],
+
 				},
 			],
 		});

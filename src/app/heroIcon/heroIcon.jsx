@@ -17,7 +17,8 @@ export default function HeroIcon({ ename, name, onclick }) {
 				style={{
 					width: "100px",
 					height: "100px",
-					border: "1px solid black",
+					border: "2px solid black",
+					borderColor: "#407e8b",
 					borderRadius: "50%",
 					margin: "16px",
 					background: `url(//game.gtimg.cn/images/yxzj/img201606/heroimg/${ename}/${ename}-smallskin-1.jpg)`,
