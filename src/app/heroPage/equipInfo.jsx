@@ -1,8 +1,9 @@
+import { color } from "echarts";
 import item from "../../consts/item_dict.json";
 
 const EquipInfo = ({ hero_info }) => {
 
-    const handleEquipShow = (e, id, show = false) => {
+	const handleEquipShow = (e, id, show = false) => {
 		const equip_container = e.target.closest(".equip_container");
 		const equip_info = equip_container.querySelector(`.equip-${id}`);
 		if (show) {
@@ -25,7 +26,8 @@ const EquipInfo = ({ hero_info }) => {
 				border: "1px solid #e1e1e1"
 			}}
 		>
-			<div>推荐出装</div>
+			{/* <div>推荐出装</div> */}
+			<h3 style={{ color: "#ecc369" }}>推荐出装</h3>
 			<div
 				style={{
 					display: "flex",

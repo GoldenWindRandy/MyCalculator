@@ -23,7 +23,8 @@ const Skill = ({ skills }) => {
 				border: "1px solid #e1e1e1"
 			}}
 		>
-			<h2>技能介绍</h2>
+			{/* <h2>技能介绍</h2> */}
+			<h2 style={{ color: "#ecc369" }}>技能介绍</h2>
 			<ul
 				style={{
 					display: "flex",
