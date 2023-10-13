@@ -283,7 +283,7 @@ const SelectEquip = () => {
 							marginTop: "24px",
 						}}
 					>
-						总战斗力：{power}
+						DPS：{power}
 					</div>
 				</div>
 			</div>
